@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+ <div class="container">
+<app-article-form></app-article-form>
+<br>
+<hr>
+ 
+<!--<div class="row">
+  <div class="col-md-8 col-md-offset-2">-->
+<app-article
+*ngFor="let article of articles"
+[article]="article"></app-article>
+<!--</div>
+</div>-->
+</div>
